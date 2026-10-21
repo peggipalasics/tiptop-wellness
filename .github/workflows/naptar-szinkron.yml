@@ -1,0 +1,44 @@
+name: Naptár szinkron
+
+# Naponta kétszer behúzza a foglalásokat a Booking / Airbnb iCal-exportból,
+# és ha változott valami, visszacommitolja a data/availability.json fájlt.
+# Kézzel is indítható az Actions fülön ("Run workflow").
+
+on:
+  schedule:
+    - cron: '17 4,16 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: naptar-szinkron
+  cancel-in-progress: false
+
+jobs:
+  szinkron:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: iCal letöltése és feldolgozása
+        env:
+          ICAL_URLS: ${{ secrets.ICAL_URLS }}
+        run: node tools/sync-ical.mjs
+
+      - name: Változás commitolása
+        run: |
+          if [ -z "$(git status --porcelain data/availability.json)" ]; then
+            echo "Nincs változás."
+            exit 0
+          fi
+          git config user.name  "naptar-szinkron"
+          git config user.email "actions@github.com"
+          git add data/availability.json
+          git commit -m "Naptár frissítés"
+          git push

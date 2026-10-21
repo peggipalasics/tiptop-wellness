@@ -1,0 +1,9 @@
+{
+  "_megjegyzes": "Foglalt időszakok. A 'tol' az érkezés, az 'ig' a távozás napja — az 'ig' napot a naptár már szabadként mutatja. Ezt a fájlt a GitHub Action írja újra az iCal-exportokból, de kézzel is szerkeszthető. Ha kézzel szerkeszted, a 'pelda' értéket állítsd false-ra.",
+  "pelda": true,
+  "frissitve": "2026-10-21T08:00:00Z",
+  "foglalt": [
+    { "tol": "2026-12-27", "ig": "2027-01-02" },
+    { "tol": "2027-02-13", "ig": "2027-02-17" }
+  ]
+}

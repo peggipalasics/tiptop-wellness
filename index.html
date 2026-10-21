@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Tip-Top Wellness Apartman</title>
+<meta name="description" id="metaDesc" content="32 m²-es apartman négy főre Zalakaros központjában, fűtött beltéri medencével és szaunával, a gyógyfürdő bejáratától 50 méterre.">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" id="ogTitle" content="Tip-Top Wellness Apartman — Zalakaros">
+<meta property="og:description" id="ogDesc" content="32 m²-es apartman fűtött medencével és szaunával, 50 méterre a zalakarosi gyógyfürdőtől.">
+<meta property="og:image" content="images/medence.jpg">
+<meta name="theme-color" content="#f3ece2">
+<link rel="icon" href="images/favicon.png" sizes="any">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main" data-i18n="ui.skip">Ugrás a tartalomra</a>
+
+<header class="site-head">
+  <div class="site-head__in wrap">
+    <a class="brand" href="#top"><img class="brand__logo logo-l" src="images/logo-fej.png" alt="" width="52" height="40"><img class="brand__logo logo-d" src="images/logo-dark-fej.png" alt="" width="52" height="40"><span>Tip-Top Wellness<small>Zalakaros</small></span></a>
+    <nav class="site-nav" aria-label="Fő menü">
+      <a href="#wellness" data-i18n="nav.wellness">Wellness</a>
+      <a href="#apartman" data-i18n="nav.apartment">Az apartman</a>
+      <a href="#galeria" data-i18n="nav.gallery">Galéria</a>
+      <a href="#naptar" data-i18n="nav.calendar">Szabad napok</a>
+      <a href="#arak" data-i18n="nav.prices">Árak</a>
+      <a href="#programok" data-i18n="nav.programs">Programok</a>
+      <a href="#kapcsolat" data-i18n="nav.contact">Kapcsolat</a>
+    </nav>
+    <div class="lang" id="langPicker" role="group" aria-label="Nyelv" data-i18n-aria="ui.lang"></div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================ HERO ============================ -->
+  <section class="hero wrap" id="top">
+    <div class="hero__grid">
+      <div>
+        <p class="eyebrow" data-i18n="hero.kicker">Zalakaros · 50 méter a gyógyfürdőtől</p>
+        <h1 data-i18n="hero.title">Fűtött medence és szauna a ház falain belül</h1>
+        <p class="lede" data-i18n="hero.lead">Négy főt fogadó apartman Zalakaros központjában.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#naptar" data-i18n="hero.cta.calendar">Szabad napok</a>
+          <a class="btn btn--ghost" href="#kapcsolat" data-i18n="hero.cta.contact">Érdeklődés</a>
+        </div>
+      </div>
+      <div class="water" id="heroVisual">
+        <div class="water__label">
+          <strong data-i18n="hero.badge">50 méter</strong>
+          <span data-i18n="hero.badgeSub">a gyógyfürdő bejárata</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FACTS =========================== -->
+  <div class="facts" id="facts">
+    <div class="fact"><b data-i18n="facts.guests">4 fő</b><span data-i18n="facts.guests.sub">32 m², egy légtérben</span></div>
+    <div class="fact"><b data-i18n="facts.pool">Fűtött medence</b><span data-i18n="facts.pool.sub">29 °C, 9–20 óra</span></div>
+    <div class="fact"><b data-i18n="facts.sauna">Szauna</b><span data-i18n="facts.sauna.sub">napi két időszakban</span></div>
+    <div class="fact"><b data-i18n="facts.parking">Ingyenes parkolás</b><span data-i18n="facts.parking.sub">sorompós belső udvar</span></div>
+    <div class="fact"><b data-i18n="facts.spa">50 méter</b><span data-i18n="facts.spa.sub">a gyógyfürdő bejárata</span></div>
+    <div class="fact"><b data-i18n="facts.reception">Recepció</b><span data-i18n="facts.reception.sub">a nap 24 órájában</span></div>
+  </div>
+
+  <!-- ============================ WELLNESS ======================== -->
+  <section class="band" id="wellness">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="nav.wellness">Wellness</p>
+        <h2 data-i18n="well.title">A wellness nem külön program</h2>
+        <p class="lede" data-i18n="well.lead"></p>
+      </div>
+      <div class="cards" id="wellCards"></div>
+      <p class="note" data-i18n="well.note"></p>
+    </div>
+  </section>
+
+  <!-- ============================ APARTMAN ======================== -->
+  <section class="band band--tint" id="apartman">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="nav.apartment">Az apartman</p>
+        <h2 data-i18n="apt.title">Az apartman</h2>
+        <p class="lede" data-i18n="apt.lead"></p>
+      </div>
+      <div class="apt">
+        <div class="amen" id="amenities"></div>
+        <div class="spec">
+          <h3 data-i18n="apt.spec.title">Jó tudni</h3>
+          <dl id="specList"></dl>
+          <h3 data-i18n="apt.kids.title" style="margin-top:1.2rem">Gyerekkel</h3>
+          <p class="spec__note" data-i18n="apt.kids"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ GALÉRIA ========================= -->
+  <section class="band" id="galeria">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="nav.gallery">Galéria</p>
+        <h2 data-i18n="gal.title">Galéria</h2>
+        <p class="lede" data-i18n="gal.lead"></p>
+      </div>
+      <div class="gal" id="gallery"></div>
+    </div>
+  </section>
+
+  <!-- ============================ NAPTÁR ========================== -->
+  <section class="band band--tint" id="naptar">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="nav.calendar">Szabad napok</p>
+        <h2 data-i18n="cal.title">Szabad napok</h2>
+        <p class="lede" data-i18n="cal.lead"></p>
+      </div>
+      <div class="cal__bar">
+        <div class="cal__nav">
+          <button class="icon-btn" id="calPrev" type="button" data-i18n-aria="cal.prev" aria-label="Előző hónap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <button class="icon-btn" id="calNext" type="button" data-i18n-aria="cal.next" aria-label="Következő hónap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+        <div class="legend">
+          <span><i class="swatch swatch--free"></i><span data-i18n="cal.free">Szabad</span></span>
+          <span><i class="swatch swatch--busy"></i><span data-i18n="cal.booked">Foglalt</span></span>
+          <span><i class="swatch swatch--past"></i><span data-i18n="cal.past">Elmúlt</span></span>
+        </div>
+      </div>
+      <div class="cal__months" id="calMonths" aria-live="polite"></div>
+      <div class="cal__meta" id="calMeta"></div>
+    </div>
+  </section>
+
+  <!-- ============================ ÁRAK ============================ -->
+  <section class="band" id="arak">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="nav.prices">Árak</p>
+        <h2 data-i18n="price.title">Árak</h2>
+        <p class="lede" data-i18n="price.lead"></p>
+      </div>
+      <div class="price">
+        <div>
+          <table class="ptable">
+            <thead><tr>
+              <th data-i18n="price.col.period">Időszak</th>
+              <th data-i18n="price.col.price">Ár</th>
+            </tr></thead>
+            <tbody id="priceRows"></tbody>
+          </table>
+          <p class="note" id="ifaNote"></p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="price.incl.title">Az árban benne van</h3>
+          <div class="amen"><ul id="inclList"></ul></div>
+          <p style="margin-top:.6rem" data-i18n="price.note"></p>
+        </div>
+      </div>
+
+      <div style="margin-top:var(--band)">
+        <h2 data-i18n="book.title">Foglalás</h2>
+        <p class="lede" data-i18n="book.lead"></p>
+        <div class="hero__cta">
+          <a class="btn btn--brass" href="#kapcsolat" data-i18n="book.direct">Írjon vagy telefonáljon</a>
+        </div>
+        <p class="eyebrow" style="margin-top:2rem" data-i18n="book.portals">Vagy foglaljon portálon</p>
+        <div class="portals" id="portals"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ PROGRAMOK ======================= -->
+  <section class="band band--tint" id="programok">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="nav.programs">Programok</p>
+        <h2 data-i18n="prog.title">Programok a környéken</h2>
+        <p class="lede" data-i18n="prog.lead"></p>
+      </div>
+      <figure class="aerial">
+        <img src="images/fekves.jpg" alt="" data-i18n-alt="gal.aerial" loading="lazy" width="1800" height="1201">
+        <figcaption data-i18n="gal.aerial"></figcaption>
+      </figure>
+      <ol class="progs" id="progList"></ol>
+      <p class="note" data-i18n="prog.note"></p>
+    </div>
+  </section>
+
+  <!-- ============================ KAPCSOLAT ======================= -->
+  <section class="band" id="kapcsolat">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="nav.contact">Kapcsolat</p>
+        <h2 data-i18n="contact.title">Kapcsolat</h2>
+        <p class="lede" data-i18n="contact.lead"></p>
+      </div>
+      <div class="contact">
+        <dl id="contactList" style="margin:0"></dl>
+        <div class="card">
+          <h3 data-i18n="form.title">Érdeklődés</h3>
+          <form id="enquiry" novalidate>
+            <div class="f2">
+              <label for="fName"><span data-i18n="form.name">Név</span>
+                <input id="fName" name="name" type="text" autocomplete="name" required></label>
+              <label for="fEmail"><span data-i18n="form.email">E-mail cím</span>
+                <input id="fEmail" name="email" type="email" autocomplete="email" required></label>
+            </div>
+            <div class="f2">
+              <label for="fIn"><span data-i18n="form.arrival">Érkezés</span>
+                <input id="fIn" name="arrival" type="date"></label>
+              <label for="fOut"><span data-i18n="form.departure">Távozás</span>
+                <input id="fOut" name="departure" type="date"></label>
+            </div>
+            <label for="fGuests"><span data-i18n="form.guests">Vendégek száma</span>
+              <select id="fGuests" name="guests"></select></label>
+            <label for="fMsg"><span data-i18n="form.msg">Üzenet</span>
+              <textarea id="fMsg" name="message" data-i18n-ph="form.msgHint"></textarea></label>
+            <p class="form-msg" id="formMsg" hidden></p>
+            <button class="btn btn--primary" type="submit" data-i18n="form.send">Érdeklődés elküldése</button>
+            <p class="form-note" data-i18n="form.note"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="site-foot__in wrap">
+    <div>
+      <img class="foot__logo logo-l" src="images/logo.png" alt="Tip-Top Wellness Apartman Zalakaros" width="140" height="140"><img class="foot__logo logo-d" src="images/logo-dark.png" alt="Tip-Top Wellness Apartman Zalakaros" width="140" height="140">
+      <p data-i18n="footer.tag"></p>
+    </div>
+    <nav aria-label="Oldaltérkép">
+      <a href="#wellness" data-i18n="nav.wellness">Wellness</a>
+      <a href="#apartman" data-i18n="nav.apartment">Az apartman</a>
+      <a href="#galeria" data-i18n="nav.gallery">Galéria</a>
+      <a href="#naptar" data-i18n="nav.calendar">Szabad napok</a>
+      <a href="#arak" data-i18n="nav.prices">Árak</a>
+      <a href="#programok" data-i18n="nav.programs">Programok</a>
+      <a href="#kapcsolat" data-i18n="nav.contact">Kapcsolat</a>
+    </nav>
+  </div>
+  <div class="wrap site-foot__legal">
+    <span id="footLegal">© Tip-Top Wellness Apartman</span>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox">
+  <div class="lightbox__bar">
+    <button class="icon-btn" type="button" id="lbClose" data-i18n-aria="ui.close" aria-label="Bezárás">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <img id="lbImg" alt="">
+</dialog>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
