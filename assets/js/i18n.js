@@ -15,6 +15,7 @@ const SZOVEGEK = {
 /* ========================= MAGYAR ========================================= */
 hu: {
   langName: 'Magyar', langShort: 'HU', htmlLang: 'hu',
+  'brand.name': 'Tip-Top Wellness Apartman',
   'meta.title': 'Tip-Top Wellness Apartman — Zalakaros',
   'meta.desc': '32 m²-es apartman négy főre Zalakaros központjában, fűtött beltéri medencével és szaunával, a gyógyfürdő bejáratától 50 méterre.',
 
@@ -159,6 +160,7 @@ hu: {
 /* ========================= DEUTSCH ======================================== */
 de: {
   langName: 'Deutsch', langShort: 'DE', htmlLang: 'de',
+  'brand.name': 'Tip-Top Wellness Apartment',
   'meta.title': 'Tip-Top Wellness Apartment — Zalakaros',
   'meta.desc': '32 m² großes Apartment für vier Personen im Zentrum von Zalakaros, mit beheiztem Innenpool und Sauna, 50 Meter vom Heilbad entfernt.',
 
@@ -303,6 +305,7 @@ de: {
 /* ========================= ENGLISH ======================================== */
 en: {
   langName: 'English', langShort: 'EN', htmlLang: 'en',
+  'brand.name': 'Tip-Top Wellness Apartment',
   'meta.title': 'Tip-Top Wellness Apartment — Zalakaros',
   'meta.desc': 'A 32 m² apartment for four in the centre of Zalakaros, Hungary, with a heated indoor pool and sauna, 50 metres from the thermal spa.',
 
@@ -447,6 +450,7 @@ en: {
 /* ========================= ČEŠTINA ======================================== */
 cs: {
   langName: 'Čeština', langShort: 'CS', htmlLang: 'cs',
+  'brand.name': 'Tip-Top Wellness Apartmán',
   'meta.title': 'Tip-Top Wellness Apartmán — Zalakaros',
   'meta.desc': 'Apartmán 32 m² pro čtyři osoby v centru Zalakarosu, s vyhřívaným vnitřním bazénem a saunou, 50 metrů od léčebných termálních lázní.',
 
@@ -591,6 +595,7 @@ cs: {
 /* ========================= ROMÂNĂ ========================================= */
 ro: {
   langName: 'Română', langShort: 'RO', htmlLang: 'ro',
+  'brand.name': 'Tip-Top Wellness Apartament',
   'meta.title': 'Apartament Tip-Top Wellness — Zalakaros',
   'meta.desc': 'Apartament de 32 m² pentru patru persoane în centrul Zalakarosului, cu piscină interioară încălzită și saună, la 50 de metri de băile termale.',
 
@@ -735,6 +740,7 @@ ro: {
 /* ========================= SLOVENČINA ===================================== */
 sk: {
   langName: 'Slovenčina', langShort: 'SK', htmlLang: 'sk',
+  'brand.name': 'Tip-Top Wellness Apartmán',
   'meta.title': 'Tip-Top Wellness Apartmán — Zalakaros',
   'meta.desc': 'Apartmán 32 m² pre štyri osoby v centre Zalakarosu, s vyhrievaným vnútorným bazénom a saunou, 50 metrov od liečebných termálnych kúpeľov.',
 

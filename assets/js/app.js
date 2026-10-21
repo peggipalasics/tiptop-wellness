@@ -50,19 +50,26 @@
   }
 
   /* ---------- Nyelvválasztó ---------------------------------------------- */
+  // Kompakt legördülő: a lenyitott listában a nyelvek teljes neve látszik,
+  // zárva csak a rövidítés, hogy a fejléc egy sorban maradjon.
   function nyelvValasztoKirajzol() {
     const tarolo = $('#langPicker');
-    tarolo.replaceChildren(...NYELVEK.map(kod => {
-      const b = el('button', {
-        type: 'button',
-        text: SZOVEGEK[kod].langShort,
-        title: SZOVEGEK[kod].langName,
-        lang: SZOVEGEK[kod].htmlLang,
-        'aria-current': kod === lang ? 'true' : 'false'
-      });
-      b.addEventListener('click', () => nyelvValt(kod));
-      return b;
-    }));
+    let sel = $('#langSelect');
+    if (!sel) {
+      // A látható felirat egy sima span; fölötte az átlátszó, de kattintható select.
+      tarolo.replaceChildren(el('span', { class: 'lang__label', 'aria-hidden': 'true' }));
+      sel = el('select', { id: 'langSelect' });
+      sel.addEventListener('change', () => nyelvValt(sel.value));
+      tarolo.appendChild(sel);
+    }
+    $('.lang__label', tarolo).textContent = SZOVEGEK[lang].langShort;
+    sel.setAttribute('aria-label', t('ui.lang'));
+    sel.replaceChildren(...NYELVEK.map(kod => el('option', {
+      value: kod,
+      lang: SZOVEGEK[kod].htmlLang,
+      text: SZOVEGEK[kod].langName
+    })));
+    sel.value = lang;
   }
 
   function nyelvValt(kod) {
