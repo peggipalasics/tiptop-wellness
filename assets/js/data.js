@@ -65,7 +65,7 @@ const ADATOK = {
     szaunaIdok: ['10:00–12:00', '15:00–17:00'],
     szomszedKedvezmeny: 20,            // % a MenDan Magic Spa & Wellness Hotelben
     szomszedNev: 'MenDan Magic Spa & Wellness Hotel',
-    fizetos: ['masszazs', 'bar'],      // a házban, külön díjért
+    fizetos: ['masszazs'],             // a házban, külön díjért
     azEpuletben: ['abc', 'pizzeria'],  // a földszinten
   },
 
@@ -82,6 +82,12 @@ const ADATOK = {
       { kulcs: 'alacsony', ar: 21000 },
     ],
     ifa: 600,                          // idegenforgalmi adó Ft/fő/éj 18 év felett
+  },
+
+  /* --- Külső oldalak, amelyekre a weboldal hivatkozik --------------------- */
+  linkek: {
+    furdo: 'https://zkf.hu/',                         // a gyógyfürdő nyitvatartása, árai
+    programok: 'https://zalakaros.hu/programok/',     // a város aktuális programjai
   },
 
   /* --- Hirdetési oldalak --------------------------------------------------- */

@@ -170,10 +170,10 @@ body::before {
 .brand > span { display: flex; flex-direction: column; }
 .brand small { font-family: var(--body); font-size: .78rem; font-weight: 600; color: var(--muted); }
 .brand__logo { width: auto; height: 46px; object-fit: contain; }
-.site-nav { display: flex; gap: .2rem; flex-wrap: wrap; margin-left: auto; }
+.site-nav { display: flex; gap: 0; flex-wrap: nowrap; margin-left: auto; }
 .site-nav a {
-  text-decoration: none; color: var(--muted); font-size: .95rem; font-weight: 600;
-  padding: .4rem .75rem; border-radius: 999px;
+  text-decoration: none; color: var(--muted); font-size: .92rem; font-weight: 600;
+  padding: .4rem .58rem; border-radius: 999px;
   transition: background-color .15s ease, color .15s ease;
 }
 .site-nav a:hover { color: var(--ink); background: var(--cream); }
@@ -187,8 +187,8 @@ body::before {
 .lang button:hover { color: var(--ink); }
 .lang button[aria-current="true"] { background: var(--surface); color: var(--accent); box-shadow: var(--shadow); }
 
-@media (max-width: 860px) {
-  /* Narrow screens: menu on its own scrollable row, no hamburger needed */
+@media (max-width: 1180px) {
+  /* Narrower screens: menu on its own scrollable row, no hamburger needed */
   .site-nav {
     order: 3; width: 100%; margin-left: 0;
     flex-wrap: nowrap; overflow-x: auto; gap: .1rem;
@@ -299,6 +299,16 @@ body::before {
   background: var(--cream); border-radius: var(--r);
 }
 .band--tint .note { background: var(--surface); }
+
+/* Callout: a short pointer to another site, with its button */
+.callout {
+  margin-top: 1.25rem; padding: 1.15rem 1.3rem;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem 1.5rem; flex-wrap: wrap;
+  background: var(--surface); border-radius: var(--r); box-shadow: var(--shadow);
+}
+.callout p { flex: 1 1 22rem; min-width: 0; color: var(--ink); font-size: 1rem; }
+.callout .btn { flex: none; }
+.callout--events { margin: 0 0 2rem; padding: 1.4rem 1.6rem; border-radius: var(--r-lg); }
 
 /* --- Wellness: text and features beside the pool photo ------------------- */
 .well { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }

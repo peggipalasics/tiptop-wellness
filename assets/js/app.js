@@ -84,6 +84,7 @@
     $$('[data-i18n-aria]').forEach(n => { n.setAttribute('aria-label', t(n.dataset.i18nAria)); });
     $$('[data-i18n-ph]').forEach(n => { n.setAttribute('placeholder', t(n.dataset.i18nPh)); });
     $$('[data-i18n-alt]').forEach(n => { n.setAttribute('alt', t(n.dataset.i18nAlt)); });
+    $$('[data-link]').forEach(a => { const u = (ADATOK.linkek || {})[a.dataset.link]; if (u) a.href = u; });
   }
 
   /* ---------- Nyitókép ---------------------------------------------------- */
