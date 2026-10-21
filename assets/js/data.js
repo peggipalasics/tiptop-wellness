@@ -14,9 +14,9 @@ const ADATOK = {
     telefon: '+36 70 366 2079',
     telefonHivas: '+36703662079',
     email: 'zalakarosiapartman@gmail.com',
-    uzemelteto: 'Palasics Tamásné',
-    beosztas: 'szálláskoordinátor',
-    nyelvek: ['hu'],                   // ← bővítsd, ha más nyelven is fogadtok vendéget
+    uzemelteto: '',                    // üres: nem jelenik meg a weboldalon
+    beosztas: '',
+    nyelvek: [],                       // üres: a "Beszélt nyelvek" sor nem jelenik meg
     ntak: 'MA21006304',
   },
 
@@ -94,7 +94,8 @@ const ADATOK = {
   /* --- Galéria -------------------------------------------------------------- */
   /* Tedd a képeket az images/ mappába ezekkel a fájlnevekkel (vagy írd át a
      listát a sajátjaidra). Amíg egy kép hiányzik, helykitöltő látszik.       */
-  heroKep: 'images/medence.jpg',
+  heroKep: 'images/szoba.jpg',       // a nagy nyitókép
+  heroKep2: 'images/medence.jpg',    // a kisebb kép a sarkában
 
   galeria: [
     { fajl: 'images/szoba.jpg',        cimkeKulcs: 'gal.room' },

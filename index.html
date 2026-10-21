@@ -15,7 +15,7 @@
 <link rel="icon" href="images/favicon.png" sizes="any">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,400..650,0..100,0..1&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Sacramento&display=swap">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -44,43 +44,47 @@
   <section class="hero wrap" id="top">
     <div class="hero__grid">
       <div>
-        <p class="eyebrow" data-i18n="hero.kicker">Zalakaros · 50 méter a gyógyfürdőtől</p>
-        <h1 data-i18n="hero.title">Fűtött medence és szauna a ház falain belül</h1>
+        <p class="script" data-i18n="hero.welcome">Szeretettel várjuk!</p>
+        <h1 data-i18n="hero.title">Közel a gyógyfürdő, és fűtött medence az apartmanházban</h1>
         <p class="lede" data-i18n="hero.lead">Négy főt fogadó apartman Zalakaros központjában.</p>
         <div class="hero__cta">
           <a class="btn btn--primary" href="#naptar" data-i18n="hero.cta.calendar">Szabad napok</a>
           <a class="btn btn--ghost" href="#kapcsolat" data-i18n="hero.cta.contact">Érdeklődés</a>
         </div>
       </div>
-      <div class="water" id="heroVisual">
-        <div class="water__label">
-          <strong data-i18n="hero.badge">50 méter</strong>
-          <span data-i18n="hero.badgeSub">a gyógyfürdő bejárata</span>
-        </div>
+      <div class="hero__visual">
+        <div class="water" id="heroVisual"></div>
+        <figure class="hero__inset" id="heroInset">
+          <figcaption><strong data-i18n="facts.pool">Fűtött medence</strong><span data-i18n="facts.pool.sub">29 °C, 9–20 óra</span></figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
   <!-- ============================ FACTS =========================== -->
-  <div class="facts" id="facts">
-    <div class="fact"><b data-i18n="facts.guests">4 fő</b><span data-i18n="facts.guests.sub">32 m², egy légtérben</span></div>
-    <div class="fact"><b data-i18n="facts.pool">Fűtött medence</b><span data-i18n="facts.pool.sub">29 °C, 9–20 óra</span></div>
-    <div class="fact"><b data-i18n="facts.sauna">Szauna</b><span data-i18n="facts.sauna.sub">napi két időszakban</span></div>
-    <div class="fact"><b data-i18n="facts.parking">Ingyenes parkolás</b><span data-i18n="facts.parking.sub">sorompós belső udvar</span></div>
-    <div class="fact"><b data-i18n="facts.spa">50 méter</b><span data-i18n="facts.spa.sub">a gyógyfürdő bejárata</span></div>
-    <div class="fact"><b data-i18n="facts.reception">Recepció</b><span data-i18n="facts.reception.sub">a nap 24 órájában</span></div>
+  <div class="facts-wrap wrap">
+    <ul class="facts" id="facts">
+      <li class="fact"><span class="fact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9" r="2.6"/><path d="M15.6 14.2c2.5-.2 4.4 1.5 4.9 4.8"/></svg></span><b data-i18n="facts.guests">4 fő</b><span data-i18n="facts.guests.sub">32 m², egy légtérben</span></li>
+      <li class="fact"><span class="fact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16c1.5 0 1.5-1.2 3-1.2S7.5 16 9 16s1.5-1.2 3-1.2 1.5 1.2 3 1.2 1.5-1.2 3-1.2 1.5 1.2 3 1.2"/><path d="M3 20c1.5 0 1.5-1.2 3-1.2S7.5 20 9 20s1.5-1.2 3-1.2 1.5 1.2 3 1.2 1.5-1.2 3-1.2 1.5 1.2 3 1.2"/><path d="M8 13V6.5a2 2 0 0 1 4 0M12 13V6.5a2 2 0 0 1 4 0M8 9.5h4"/></svg></span><b data-i18n="facts.pool">Fűtött medence</b><span data-i18n="facts.pool.sub">29 °C, 9–20 óra</span></li>
+      <li class="fact"><span class="fact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3.5c-1 1.5 1 2.5 0 4M12 3.5c-1 1.5 1 2.5 0 4M16 3.5c-1 1.5 1 2.5 0 4"/><path d="M4 11.5h16v5a3.5 3.5 0 0 1-3.5 3.5h-9A3.5 3.5 0 0 1 4 16.5z"/></svg></span><b data-i18n="facts.sauna">Szauna</b><span data-i18n="facts.sauna.sub">napi két időszakban</span></li>
+      <li class="fact"><span class="fact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M10 16.5v-9h3a2.6 2.6 0 0 1 0 5.2h-3"/></svg></span><b data-i18n="facts.parking">Ingyenes parkolás</b><span data-i18n="facts.parking.sub">sorompós belső udvar</span></li>
+      <li class="fact"><span class="fact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg></span><b data-i18n="facts.spa">50 méter</b><span data-i18n="facts.spa.sub">a gyógyfürdő bejárata</span></li>
+      <li class="fact"><span class="fact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16.5a6 6 0 0 1 12 0"/><path d="M4 19.5h16"/><path d="M12 10.5V8.5M10.5 8.5h3"/></svg></span><b data-i18n="facts.reception">Recepció</b><span data-i18n="facts.reception.sub">a nap 24 órájában</span></li>
+    </ul>
   </div>
 
   <!-- ============================ WELLNESS ======================== -->
   <section class="band" id="wellness">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow" data-i18n="nav.wellness">Wellness</p>
-        <h2 data-i18n="well.title">A wellness nem külön program</h2>
+    <div class="wrap well">
+      <div>
+        <h2 data-i18n="well.title">A wellness a házban van</h2>
         <p class="lede" data-i18n="well.lead"></p>
+        <ul class="feats" id="wellCards"></ul>
+        <p class="note" data-i18n="well.note"></p>
       </div>
-      <div class="cards" id="wellCards"></div>
-      <p class="note" data-i18n="well.note"></p>
+      <figure class="well__photo">
+        <img src="images/medence.jpg" alt="" data-i18n-alt="gal.pool" loading="lazy" width="1800" height="1354">
+      </figure>
     </div>
   </section>
 
@@ -88,7 +92,6 @@
   <section class="band band--tint" id="apartman">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow" data-i18n="nav.apartment">Az apartman</p>
         <h2 data-i18n="apt.title">Az apartman</h2>
         <p class="lede" data-i18n="apt.lead"></p>
       </div>
@@ -108,7 +111,6 @@
   <section class="band" id="galeria">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow" data-i18n="nav.gallery">Galéria</p>
         <h2 data-i18n="gal.title">Galéria</h2>
         <p class="lede" data-i18n="gal.lead"></p>
       </div>
@@ -120,7 +122,6 @@
   <section class="band band--tint" id="naptar">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow" data-i18n="nav.calendar">Szabad napok</p>
         <h2 data-i18n="cal.title">Szabad napok</h2>
         <p class="lede" data-i18n="cal.lead"></p>
       </div>
@@ -148,7 +149,6 @@
   <section class="band" id="arak">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow" data-i18n="nav.prices">Árak</p>
         <h2 data-i18n="price.title">Árak</h2>
         <p class="lede" data-i18n="price.lead"></p>
       </div>
@@ -166,17 +166,17 @@
         <div class="card">
           <h3 data-i18n="price.incl.title">Az árban benne van</h3>
           <div class="amen"><ul id="inclList"></ul></div>
-          <p style="margin-top:.6rem" data-i18n="price.note"></p>
+          <p data-i18n="price.note"></p>
         </div>
       </div>
 
-      <div style="margin-top:var(--band)">
+      <div class="book">
         <h2 data-i18n="book.title">Foglalás</h2>
         <p class="lede" data-i18n="book.lead"></p>
         <div class="hero__cta">
           <a class="btn btn--brass" href="#kapcsolat" data-i18n="book.direct">Írjon vagy telefonáljon</a>
         </div>
-        <p class="eyebrow" style="margin-top:2rem" data-i18n="book.portals">Vagy foglaljon portálon</p>
+        <p class="portals-label" data-i18n="book.portals">Vagy foglaljon portálon</p>
         <div class="portals" id="portals"></div>
       </div>
     </div>
@@ -186,7 +186,6 @@
   <section class="band band--tint" id="programok">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow" data-i18n="nav.programs">Programok</p>
         <h2 data-i18n="prog.title">Programok a környéken</h2>
         <p class="lede" data-i18n="prog.lead"></p>
       </div>
@@ -203,7 +202,6 @@
   <section class="band" id="kapcsolat">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow" data-i18n="nav.contact">Kapcsolat</p>
         <h2 data-i18n="contact.title">Kapcsolat</h2>
         <p class="lede" data-i18n="contact.lead"></p>
       </div>

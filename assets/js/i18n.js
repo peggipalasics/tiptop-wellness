@@ -37,7 +37,8 @@ hu: {
   'nav.contact': 'Kapcsolat',
 
   'hero.kicker': 'Zalakaros · 50 méter a gyógyfürdőtől',
-  'hero.title': 'Fűtött medence és szauna a ház falain belül',
+  'hero.welcome': 'Szeretettel várjuk!',
+  'hero.title': 'Közel a gyógyfürdő, és fűtött medence az apartmanházban',
   'hero.lead': 'Harminckét négyzetméteres, egy légterű apartman teraszzal, a MenDan Apartmanház harmadik emeletén. Felszerelt konyha, légkondicionálás, ingyenes wifi, parkolás a sorompóval védett belső udvarban. A gyógyfürdő bejárata gyalog egy perc.',
   'hero.cta.calendar': 'Szabad napok',
   'hero.cta.contact': 'Érdeklődés',
@@ -176,7 +177,8 @@ de: {
   'nav.contact': 'Kontakt',
 
   'hero.kicker': 'Zalakaros · 50 Meter zum Heilbad',
-  'hero.title': 'Beheizter Pool und Sauna im eigenen Haus',
+  'hero.welcome': 'Herzlich willkommen!',
+  'hero.title': 'Nah am Heilbad, mit beheiztem Pool im Apartmenthaus',
   'hero.lead': 'Ein 32 m² großes Apartment mit einem Wohnraum und Terrasse, im dritten Stock des MenDan Apartmenthauses. Ausgestattete Küche, Klimaanlage, kostenloses WLAN, Parkplatz im schrankengesicherten Innenhof. Zum Eingang des Heilbads ist es eine Minute zu Fuß.',
   'hero.cta.calendar': 'Freie Termine',
   'hero.cta.contact': 'Anfragen',
@@ -315,7 +317,8 @@ en: {
   'nav.contact': 'Contact',
 
   'hero.kicker': 'Zalakaros · 50 metres from the thermal spa',
-  'hero.title': 'A heated pool and sauna inside the house',
+  'hero.welcome': 'A warm welcome awaits',
+  'hero.title': 'Close to the thermal spa, with a heated pool in the house',
   'hero.lead': 'A 32 m² open-plan apartment with a terrace, on the third floor of the MenDan apartment house. Equipped kitchen, air conditioning, free wifi, and parking in the barrier-controlled inner courtyard. The spa entrance is a one-minute walk.',
   'hero.cta.calendar': 'See availability',
   'hero.cta.contact': 'Enquire',
@@ -454,7 +457,8 @@ cs: {
   'nav.contact': 'Kontakt',
 
   'hero.kicker': 'Zalakaros · 50 metrů od termálních lázní',
-  'hero.title': 'Vyhřívaný bazén a sauna přímo v domě',
+  'hero.welcome': 'Srdečně vás vítáme!',
+  'hero.title': 'Blízko lázní a s vyhřívaným bazénem v domě',
   'hero.lead': 'Apartmán 32 m² s jedním obytným prostorem a terasou, ve třetím patře apartmánového domu MenDan. Vybavená kuchyň, klimatizace, bezplatná wifi, parkování v uzavřeném vnitřním dvoře se závorou. Ke vchodu do lázní je to minuta pěšky.',
   'hero.cta.calendar': 'Volné termíny',
   'hero.cta.contact': 'Poptávka',
@@ -593,7 +597,8 @@ ro: {
   'nav.contact': 'Contact',
 
   'hero.kicker': 'Zalakaros · la 50 de metri de băile termale',
-  'hero.title': 'Piscină încălzită și saună în aceeași clădire',
+  'hero.welcome': 'Vă așteptăm cu drag!',
+  'hero.title': 'Aproape de băile termale, cu piscină încălzită în clădire',
   'hero.lead': 'Apartament de 32 m² în spațiu deschis, cu terasă, la etajul trei al clădirii MenDan. Bucătărie utilată, aer condiționat, wifi gratuit și parcare în curtea interioară cu barieră. Intrarea la băi este la un minut de mers pe jos.',
   'hero.cta.calendar': 'Vezi disponibilitatea',
   'hero.cta.contact': 'Cerere de ofertă',
@@ -732,7 +737,8 @@ sk: {
   'nav.contact': 'Kontakt',
 
   'hero.kicker': 'Zalakaros · 50 metrov od termálnych kúpeľov',
-  'hero.title': 'Vyhrievaný bazén a sauna priamo v dome',
+  'hero.welcome': 'Srdečne vás vítame!',
+  'hero.title': 'Blízko kúpeľov a s vyhrievaným bazénom v dome',
   'hero.lead': 'Apartmán 32 m² s jedným obytným priestorom a terasou, na treťom poschodí apartmánového domu MenDan. Zariadená kuchyňa, klimatizácia, bezplatná wifi, parkovanie v uzavretom vnútornom dvore so závorou. K vchodu do kúpeľov je to minúta pešo.',
   'hero.cta.calendar': 'Voľné termíny',
   'hero.cta.contact': 'Dopyt',

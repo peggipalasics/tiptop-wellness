@@ -88,23 +88,37 @@
 
   /* ---------- Nyitókép ---------------------------------------------------- */
   function nyitokepBeallit() {
-    const doboz = $('#heroVisual');
-    if (!doboz || !ADATOK.heroKep || doboz.querySelector('img')) return;
-    const img = new Image();
-    img.alt = '';
-    img.decoding = 'async';
-    img.addEventListener('load', () => doboz.prepend(img));
-    img.src = ADATOK.heroKep;
+    const betolt = (doboz, src, cimkeKulcs) => {
+      if (!doboz || !src) return;
+      let img = doboz.querySelector('img');
+      if (!img) {
+        img = new Image();
+        img.decoding = 'async';
+        img.addEventListener('load', () => doboz.prepend(img));
+        img.src = src;
+      }
+      img.alt = t(cimkeKulcs);
+    };
+    betolt($('#heroVisual'), ADATOK.heroKep, 'gal.room');
+    betolt($('#heroInset'), ADATOK.heroKep2, 'gal.pool');
   }
 
   /* ---------- Wellness ---------------------------------------------------- */
+  // Egyszerű vonalas ikonok a wellness-pontokhoz, a szövegek sorrendjében:
+  // medence, szauna, kedvezmény, masszázs.
+  const WELL_IKONOK = [
+    '<path d="M3 16c1.5 0 1.5-1.2 3-1.2S7.5 16 9 16s1.5-1.2 3-1.2 1.5 1.2 3 1.2 1.5-1.2 3-1.2 1.5 1.2 3 1.2"/><path d="M3 20c1.5 0 1.5-1.2 3-1.2S7.5 20 9 20s1.5-1.2 3-1.2 1.5 1.2 3 1.2 1.5-1.2 3-1.2 1.5 1.2 3 1.2"/><path d="M8 13V6.5a2 2 0 0 1 4 0M12 13V6.5a2 2 0 0 1 4 0M8 9.5h4"/>',
+    '<path d="M8 3.5c-1 1.5 1 2.5 0 4M12 3.5c-1 1.5 1 2.5 0 4M16 3.5c-1 1.5 1 2.5 0 4"/><path d="M4 11.5h16v5a3.5 3.5 0 0 1-3.5 3.5h-9A3.5 3.5 0 0 1 4 16.5z"/>',
+    '<path d="M3.5 12.5 11 5h7.5v7.5L11 20z"/><circle cx="15" cy="8.5" r="1.3"/>',
+    '<path d="M5 19c0-8 6-13 14-14-1 8-6 14-14 14z"/><path d="M5 19l8-8"/>',
+  ];
+
   function wellnessKirajzol() {
-    $('#wellCards').replaceChildren(...t('well.items').map(item =>
-      el('div', { class: 'card' }, [
-        el('h3', { text: item.t }),
-        el('p', { text: item.d })
-      ])
-    ));
+    $('#wellCards').replaceChildren(...t('well.items').map((item, i) => {
+      const ikon = el('span', { class: 'feat__icon', 'aria-hidden': 'true',
+        html: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">' + (WELL_IKONOK[i] || WELL_IKONOK[0]) + '</svg>' });
+      return el('li', { class: 'feat' }, [ikon, el('h3', { text: item.t }), el('p', { text: item.d })]);
+    }));
   }
 
   /* ---------- Apartman ---------------------------------------------------- */
