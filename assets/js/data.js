@@ -108,7 +108,7 @@ const ADATOK = {
     { fajl: 'images/lakoter.jpg',      cimkeKulcs: 'gal.living' },
     { fajl: 'images/konyha.jpg',       cimkeKulcs: 'gal.kitchen' },
     { fajl: 'images/konyha-szoba.jpg', cimkeKulcs: 'gal.kitchenRoom' },
-    { fajl: 'images/furdoszoba.jpg',   cimkeKulcs: 'gal.bath' },   // ← még hiányzik a kép
+    { fajl: 'images/furdoszoba.jpg',   cimkeKulcs: 'gal.bath' },
     { fajl: 'images/medence.jpg',      cimkeKulcs: 'gal.pool' },
     { fajl: 'images/recepcio.jpg',     cimkeKulcs: 'gal.reception' },
     { fajl: 'images/folyoso.jpg',      cimkeKulcs: 'gal.corridor' },
