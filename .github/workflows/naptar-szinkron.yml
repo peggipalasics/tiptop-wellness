@@ -2,12 +2,20 @@ name: Naptár szinkron
 
 # Naponta kétszer behúzza a foglalásokat a Booking / Airbnb iCal-exportból,
 # és ha változott valami, visszacommitolja a data/availability.json fájlt.
-# Kézzel is indítható az Actions fülön ("Run workflow").
+# Kézzel is indítható az Actions fülön ("Run workflow"), és lefut, ha a
+# szinkron szkriptje vagy ez a fájl változik.
 
 on:
   schedule:
     - cron: '17 4,16 * * *'
   workflow_dispatch:
+  # Ha maga a szinkron változik, azonnal lefut egyszer.
+  # (A data/ mappa nincs a listában, így a saját commitja nem indítja újra.)
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/naptar-szinkron.yml'
+      - 'tools/sync-ical.mjs'
 
 permissions:
   contents: write
