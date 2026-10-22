@@ -120,7 +120,7 @@ const ADATOK = {
 
   /* --- Naptár -------------------------------------------------------------- */
   naptar: {
-    aktiv: false,                      // ← true, ha a data/availability.json valódi foglalásokat tartalmaz
+    aktiv: true,                       // false: a naptár helyett "érdeklődjön" szöveg látszik
     honapokElore: 12,
     adatUrl: 'data/availability.json',
   },
