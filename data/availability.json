@@ -1,9 +1,18 @@
 {
-  "_megjegyzes": "Foglalt időszakok. A 'tol' az érkezés, az 'ig' a távozás napja — az 'ig' napot a naptár már szabadként mutatja. Ezt a fájlt a GitHub Action írja újra az iCal-exportokból, de kézzel is szerkeszthető. Ha kézzel szerkeszted, a 'pelda' értéket állítsd false-ra.",
-  "pelda": true,
-  "frissitve": "2026-10-21T08:00:00Z",
+  "_megjegyzes": "Ezt a fájlt a tools/sync-ical.mjs állítja elő az iCal-exportokból. Kézi szerkesztés esetén a következő szinkron felülírja.",
+  "pelda": false,
+  "frissitve": "2026-10-22T06:33:36.729Z",
+  "forrasok": [
+    {
+      "forras": "ical.booking.com",
+      "idoszakok": 1,
+      "allapot": "ok"
+    }
+  ],
   "foglalt": [
-    { "tol": "2026-12-27", "ig": "2027-01-02" },
-    { "tol": "2027-02-13", "ig": "2027-02-17" }
+    {
+      "tol": "2026-10-28",
+      "ig": "2026-10-31"
+    }
   ]
 }
